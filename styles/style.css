@@ -15,7 +15,7 @@
   grid-template-rows: auto;
   position: relative;
   min-width: 375px;
-  height: 668px;
+  min-height: 668px;
   padding: 10px 10px;
 }
 
@@ -48,7 +48,9 @@
 }
 
 .header::before,
-.header::after {
+.header::after,
+.footer::before,
+.footer::after  {
   content: "";
   position: absolute;
   margin: 10px 10px;
@@ -58,14 +60,16 @@
   pointer-events: none;
 }
 
-.header::before {
+.header::before,
+.footer::before {
   left: 0;
   bottom: 0;
   border-bottom-color: var(--declarative-elements-color);
   border-left-color: var(--declarative-elements-color);
 }
 
-.header::after {
+.header::after,
+.footer::after {
   top: 0;
   right: 0;
   border-top-color: var(--declarative-elements-color);
@@ -416,39 +420,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: clamp(375px, 100%, 1920px);
   min-height: 668px;
-}
-
-.footer::before,
-.footer::after {
-  content: "";
-  position: absolute;
-  margin: 10px 10px;
-  width: 25px;
-  height: 25px;
-  border: 2px solid transparent;
-  pointer-events: none;
-}
-
-.footer::before {
-  left: 0;
-  bottom: 0;
-  border-bottom-color: var(--declarative-elements-color);
-  border-left-color: var(--declarative-elements-color);
-}
-
-.footer::after {
-  top: 0;
-  right: 0;
-  border-top-color: var(--declarative-elements-color);
-  border-right-color: var(--declarative-elements-color);
 }
 
 .text_footer {
   font-family: var(--font-family), sans-serif;
   font-weight: 700;
-  font-size: 116px;
+  font-size: clamp(7.25rem, 10.7699rem + -15.0183vw, 9.8125rem);
   line-height: 95.7px;
   color: var(--title-header-color);
   text-shadow: 2px 2px 0px var(--title-bg-color);
@@ -456,14 +434,13 @@
 
 @media (width >= 768px) {
   .header {
-    margin: 20px 20px 20px 0px ;
-    display: grid;
     grid-template-columns: 1fr 1fr auto;
     grid-template-rows: auto 1fr 1fr 1fr 1fr 100px;
+    margin: 20px;
   }
 
   .main {
-    margin: 80px 20px 80px 20px;
+    margin: 80px 20px;
   }
 
   .rec {
@@ -479,9 +456,6 @@
   }
 
   .title_header {
-    margin-left: 0;
-    margin-top: 0;
-    font-size: 120px;
     grid-row: 4;
     grid-column: 1 / span 2;
   }
@@ -628,9 +602,6 @@
     min-width: 768px;
     min-height: 1024px;
   }
-  .text_footer {
-    font-size: 120px;
-  }
 }
 
 @media (width >= 1024px) {
@@ -638,7 +609,7 @@
   .header {
     margin: 20px 20px 0 0px ;
     grid-template-columns: 1fr 1fr auto;
-    grid-template-rows: auto 3fr 1fr 0.7fr 2fr  15px;
+    grid-template-rows: auto 3fr 1fr 0.7fr 2fr 15px;
     margin-block-end: 60px;
   }
 
@@ -749,9 +720,5 @@
     text-align: center;
     min-width: 1024px;
     min-height: 768px;
-  }
-
-  .text_footer {
-    font-size: 157px;
   }
 }
