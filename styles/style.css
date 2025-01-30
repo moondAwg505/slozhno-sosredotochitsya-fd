@@ -15,7 +15,7 @@
   grid-template-rows: auto;
   position: relative;
   min-width: 375px;
-  height: 100%;
+  height: 668px;
   padding: 10px 10px;
 }
 
@@ -136,7 +136,8 @@
   margin-top: 55px;
   text-align: left;
   background-color: var(--title-bg-color);
-  max-height: max-content;
+  max-width: max-content;
+  max-height: min-content;
   margin-bottom: 52px;
 }
 
@@ -160,7 +161,6 @@
 
 .multitasking {
   margin-block-start: 20px;
-  margin-block-end: 20px;
 }
 
 .dopamine {
@@ -638,7 +638,8 @@
   .header {
     margin: 20px 20px 0 0px ;
     grid-template-columns: 1fr 1fr auto;
-    grid-template-rows: auto 3fr 1fr 1fr 2fr 15px;
+    grid-template-rows: auto 3fr 1fr 0.7fr 2fr  15px;
+    margin-block-end: 60px;
   }
 
   .rec {
@@ -668,17 +669,18 @@
   }
 
   .title-decor {
-    position: absolute;
+    margin-left: 35px;
     display: grid;
     margin-top: 41px;
-    grid-row: 5;
     grid-column: 2 / span 3;
-    justify-self: end;
-    text-align: left;
-    align-items: end;
+    grid-row: 5;
+    justify-self: center;
+    align-self: center;
+    transform: translateY(30px);
   }
 
   .why_focus_hard {
+    
     display: grid;
     grid-template-columns: 315px auto;
   }
