@@ -483,6 +483,10 @@
     align-items: start;
   }
 
+  .main {
+    margin: 60px 10px 50px;
+  }
+
   .why_focus_hard_title {
     grid-column: 1;
     grid-row: 1;
