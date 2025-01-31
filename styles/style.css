@@ -22,6 +22,7 @@
 
 .rec {
   display: block;
+  /* position: absolute; */
   text-align: end;
   color: #ff0070;
   font-family: var(--font-family), sans-serif;
@@ -434,39 +435,43 @@
 }
 
 @media (width >= 768px) {
-  .header {
-    grid-template-columns: 1fr 1fr auto;
-    grid-template-rows: auto 1fr 1fr 1fr 1fr 100px;
-    margin: 20px;
-  }
 
-  .main {
-    margin: 80px 20px;
-  }
+ .header::before,
+ .header::after,
+ .footer::before,
+ .footer::after {
+  margin: 20px 20px;
+}
 
-  .rec {
-    margin: 0;
-    grid-column: 3;
-    justify-self: end;
-  }
+.header {
+  grid-template-columns: 1fr 1fr auto; /* Три колонки */
+  grid-template-rows: auto 1fr 1fr 1fr 1fr 100px; /* Шесть строк */
+}
 
-  .header__theme-menu {
-    align-items: end;
-    grid-row: 2 / 3;
-    grid-column: 3;
-  }
+.rec {
+  margin-top: 10px;
+  margin-right: 10px;
+  grid-row: 2; /* Первая строка */
+  grid-column: 3; /* Третья колонка */
+}
 
-  .title_header {
-    grid-row: 4;
-    grid-column: 1 / span 2;
-  }
-  .title-decor {
-    margin-top: 41px;
-    grid-row: 5;
-    grid-column: 2 / span 3;
-    justify-self: end;
-    text-align: left;
-  }
+.header__theme-menu {
+  grid-row: 3; /* Вторая строка */
+  grid-column: 3; /* Третья колонка */
+}
+
+.title_header {
+  grid-row: 4; /* Четвёртая строка */
+  grid-column: 1 / span 2; /* Занимает две колонки */
+  align-self: center; /* Выравнивание по вертикали по центру */
+
+}
+
+.title-decor {
+  grid-row: 5; /* Пятая строка */
+  grid-column: 2 / span 2; /* Занимает две колонки */
+  justify-self: end; /* Выравнивание по правому краю */
+}
 
   .why_focus_hard {
     display: grid;
