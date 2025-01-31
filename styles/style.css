@@ -13,7 +13,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  position: relative;
+  /* position: relative; */
   min-width: 375px;
   min-height: 100vh;
   padding: 10px 10px;
@@ -50,7 +50,7 @@
 .header::before,
 .header::after,
 .footer::before,
-.footer::after {
+.footer::after  {
   content: "";
   position: absolute;
   margin: 10px 10px;
@@ -451,7 +451,7 @@
 
   .header__theme-menu {
     align-items: end;
-    grid-row: 2 / 3;
+    grid-row: 2 /  3;
     grid-column: 3;
   }
 
@@ -546,6 +546,7 @@
     grid-column: 2;
   }
   .sky_and_clouds {
+
     grid-row: 1 / 2;
   }
   .music {
@@ -604,8 +605,9 @@
 }
 
 @media (width >= 1024px) {
+
   .header {
-    margin: 20px 20px 0 0px;
+    margin: 20px 20px 0 0px ;
     grid-template-columns: 1fr 1fr auto;
     grid-template-rows: auto 3fr 1fr 0.7fr 2fr 15px;
     margin-block-end: 60px;
@@ -649,6 +651,7 @@
   }
 
   .why_focus_hard {
+    
     display: grid;
     grid-template-columns: 315px auto;
   }
@@ -712,7 +715,7 @@
     grid-template-rows: 260px auto 425px;
     gap: 20px;
   }
-
+  
   .footer {
     text-align: center;
     min-width: 1024px;
