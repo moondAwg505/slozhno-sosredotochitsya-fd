@@ -1,1 +1,1 @@
-https://github.com/moondAwg505/slozhno-sosredotochitsya-fdcd
+https://github.com/moondAwg505/slozhno-sosredotochitsya-fd
