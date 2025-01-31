@@ -7,7 +7,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: var(--bg-color-site);
+  /* background-color: var(--bg-color-site); */
 }
 
 .header {
@@ -169,9 +169,9 @@
   margin-block-start: 20px;
 }
 
-.dopamine {
+/* .dopamine {
   margin-block-start: 20px;
-}
+} */
 
 .multitasking_title {
   margin-block-end: 10px;
