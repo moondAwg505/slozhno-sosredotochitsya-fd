@@ -456,21 +456,27 @@
 }
 
 .header__theme-menu {
-  grid-row: 3; /* Вторая строка */
+  position: relative;
+  bottom: 80px;
+  right: 10px;
+  grid-row:  3; /* Вторая строка */
   grid-column: 3; /* Третья колонка */
 }
 
 .title_header {
+  position: relative;
+  bottom: 60px;
+  right: 5px;
   grid-row: 4; /* Четвёртая строка */
   grid-column: 1 / span 2; /* Занимает две колонки */
-  align-self: center; /* Выравнивание по вертикали по центру */
+  align-self: self-start; /* Выравнивание по вертикали по центру */
 
 }
 
 .title-decor {
+  display: grid;
   grid-row: 5; /* Пятая строка */
-  grid-column: 2 / span 2; /* Занимает две колонки */
-  justify-self: end; /* Выравнивание по правому краю */
+  grid-column: 2 / 4; /* Занимает две колонки */
 }
 
   .why_focus_hard {
