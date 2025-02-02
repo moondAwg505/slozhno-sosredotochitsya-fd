@@ -547,6 +547,7 @@
 
   .multitasking,
   .dopamine {
+    grid-column: 2;
     margin-inline-start: 30px;
     margin-inline-end: 10px;
   }
@@ -587,11 +588,11 @@
     grid-row: 1;
   }
 
-  .multitasking,
+  /* .multitasking,
   .dopamine {
     grid-column: 2;
   }
-  /* .multitasking {
+  .multitasking {
     grid-row: 1;
   } */
   .dopamine {
