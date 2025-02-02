@@ -29,10 +29,6 @@
   text-transform: uppercase;
 }
 
-.rec {
-  display: inline;
-}
-
 .rec::after {
   content: "";
   display: inline-block;
@@ -595,9 +591,9 @@
   .dopamine {
     grid-column: 2;
   }
-  .multitasking {
+  /* .multitasking {
     grid-row: 1;
-  }
+  } */
   .dopamine {
     grid-row: 2;
   }
