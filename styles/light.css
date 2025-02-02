@@ -1,13 +1,4 @@
 
-:root {
-  --title-bg-color: #ff0070;
-  --title-header-color: #DB00FF;
-  --title-color: #000028;
-  --text-color: #f1b2ce;
-  --declarative-elements-color: #FF0070;
-  --bg-color-site: #000028;
-}
-
 :root.theme-light {
   --declarative-elements-color: #353430;
   --title-bg-color: #FF8DCB;
@@ -15,6 +6,7 @@
   --title-color: #353430;
   --text-color: #353430;
   --bg-color-site: #FFF1F7;
+  --bg-image: url(../images/cover-image-light.png);
 }
 
 .theme-light .rec {
@@ -22,13 +14,17 @@
 }
 
 .theme-light .page {
-  background-image: url(/images/cover-image-light.png);
+  background-image: var(--bg-image);
   background-color: var( --bg-color-site);
 }
 
 @media (prefers-color-scheme: light) {
+.rec {
+  display: none;
+}
+
   .page {
-    background-image: url(/images/cover-image-light.png);
+    background-image: var();
     background-color: var( --bg-color-site);
   }
 

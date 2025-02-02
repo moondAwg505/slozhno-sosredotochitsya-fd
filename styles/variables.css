@@ -1,11 +1,12 @@
  :root {
   --font-family: 'IBM Plex mono';
-  --font-size: 18px;
+  --font-size: 1,125rem;
   --declarative-elements-color: #FF0070;
   --title-bg-color: #ff0070;
   --title-header-color: #DB00FF;
   --title-color: #000028;
   --text-color: #f1b2ce;
-  --text-line-height: 23.4px;
+  --text-line-height: 1,4625rem;
   --bg-color-site: #000028;
+  --bg-image: url(../images/cover-image-dark.png);
 }
