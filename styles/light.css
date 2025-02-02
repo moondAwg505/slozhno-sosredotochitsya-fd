@@ -1,12 +1,12 @@
 
-:root.theme-light {
+:root {
   --declarative-elements-color: #353430;
   --title-bg-color: #FF8DCB;
   --title-header-color: #FFC2E6;
   --title-color: #353430;
   --text-color: #353430;
   --bg-color-site: #FFF1F7;
-  --bg-image: url(../images/cover-image-light.png);
+  --bg-image: url(/images/cover-image-light.png);
 }
 
 .theme-light .rec {
@@ -15,25 +15,26 @@
 
 .theme-light .page {
   background-image: var(--bg-image);
-  background-color: var( --bg-color-site);
+  background-color: var(--bg-color-site);
 }
 
 @media (prefers-color-scheme: light) {
-.rec {
-  display: none;
-}
+    :root {
+        --declarative-elements-color: #353430;
+        --title-bg-color: #FF8DCB;
+        --title-header-color: #FFC2E6;
+        --title-color: #353430;
+        --text-color: #353430;
+        --bg-color-site: #FFF1F7;
+        --bg-image: url(/images/cover-image-light.png);
+      }
 
   .page {
-    background-image: var();
-    background-color: var( --bg-color-site);
+      background-image: var(--bg-image);
+    background-color: var(--bg-color-site);
   }
 
-  :root {
-    --declarative-elements-color: #353430;
-    --title-bg-color: #FF8DCB;
-    --title-header-color: #FFC2E6;
-    --title-color: #353430;
-    --text-color: #353430;
-    --bg-color-site: #FFF1F7;
-  }
+  .rec {
+        display: none;
+    }
 }
