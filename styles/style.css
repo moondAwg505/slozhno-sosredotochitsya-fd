@@ -23,7 +23,7 @@
   display: block;
   text-align: end;
   color: #ff0070;
-  font-family: var(--font-family), sans-serif;
+  font-family: var(--font-family), monospace;
   font-weight: 400;
   font-size: var(--font-size, 18px);
   text-transform: uppercase;
@@ -48,8 +48,6 @@
 }
 
 .decorated-zone::before,
-.decorated-zone::after,
-.decorated-zone::before,
 .decorated-zone::after {
   content: "";
   position: absolute;
@@ -59,7 +57,6 @@
   pointer-events: none;
 }
 
-.decorated-zone::before,
 .decorated-zone::before {
   left: 10px;
   bottom: 10px;
@@ -67,7 +64,6 @@
   border-left-color: var(--declarative-elements-color);
 }
 
-.decorated-zone::after,
 .decorated-zone::after {
   top: 10px;
   right: 10px;
@@ -143,7 +139,7 @@
 }
 
 .main {
-  margin: 40px 10px 50px;
+  margin: 40px 10px 40px 10px;
 }
 
 .article-title {
@@ -187,7 +183,7 @@
 }
 
 .why_focus_hard {
-  margin-block-end: 50px;
+  margin-block-end: 30px;
   display: flex;
   flex-direction: column;
 }
@@ -249,6 +245,7 @@
 .card {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .card_images {
@@ -290,7 +287,6 @@
     grid-column: 3;
   }
 
-  .decorated-zone::before,
   .decorated-zone::before {
     left: 20px;
     bottom: 20px;
@@ -298,7 +294,6 @@
     border-left-color: var(--declarative-elements-color);
   }
 
-  .decorated-zone::after,
   .decorated-zone::after {
     top: 20px;
     right: 20px;
@@ -493,7 +488,6 @@
     margin-right: 20px;
   }
 
-  .decorated-zone::before,
   .decorated-zone::before {
     left: 20px;
     bottom: 20px;
@@ -501,7 +495,6 @@
     border-left-color: var(--declarative-elements-color);
   }
 
-  .decorated-zone::after,
   .decorated-zone::after {
     top: 20px;
     right: 20px;

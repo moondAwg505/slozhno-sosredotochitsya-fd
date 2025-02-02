@@ -5,18 +5,9 @@
   --title-color: #000028;
   --text-color: #f1b2ce;
   --bg-color-site: #000028;
-  --bg-image: url(/images/cover-image-dark.png);
+  --bg-image: url(../images/cover-image-dark.png);
 }
 
-:root.theme-dark {
-  --declarative-elements-color: #FF0070;
-  --title-bg-color: #ff0070;
-  --title-header-color: #DB00FF;
-  --title-color: #000028;
-  --text-color: #f1b2ce;
-  --bg-color-site: #000028;
-  --bg-image: url(/images/cover-image-dark.png);
-}
 
 .theme-dark .page {
   background-image: var(--bg-image);
