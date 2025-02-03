@@ -127,7 +127,7 @@
   color: var(--title-color);
 }
 
-.title-decor {
+.text_header-decor {
   margin-top: 55px;
   background-color: var(--title-bg-color);
   min-width: min-content;
@@ -156,12 +156,12 @@
   color: var(--text-color, #f1b2ce);
 }
 
-.section-decor {
+.title-decor {
   background-color: var(--title-bg-color);
   min-width: max-content;
 }
 
-.section-decor-3 {
+.title-decor-3 {
   background-color: var(--title-bg-color);
   min-width: min-content;
 }
@@ -178,18 +178,14 @@
   margin-block-end: 50px;
 }
 
+.card {
+  margin-bottom: 2rem;
+}
+
 .why_focus_hard {
   margin-block-end: 30px;
   display: flex;
   flex-direction: column;
-}
-
-.multitasking {
-  margin-block-start: 20px;
-}
-
-.multitasking-second {
-  margin-block-start: 20px;
 }
 
 .word_multitasking_text_custom {
@@ -238,7 +234,7 @@
   background-color: var(--title-bg-color, #ff0070);
 }
 
-.card {
+.card-list-image {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -273,13 +269,13 @@
 @media (width >= 768px) {
   .header {
     grid-template-columns: 1fr 1fr auto;
-    grid-template-rows: auto 1fr 1fr 1fr 1fr 100px;
+    grid-template-rows: auto auto auto auto;
   }
 
   .rec {
     margin-top: 10px;
     margin-right: 10px;
-    grid-row: 2;
+    grid-row: 1;
     grid-column: 3;
   }
 
@@ -300,25 +296,23 @@
   .header__theme-menu {
     grid-row: 2;
     grid-column: 3;
-    align-self: end;
-    justify-self: end;
-    margin-block-start: 184px;
     margin-inline-end: 10px;
+    margin-block-start: 30px;
   }
 
   .title_header {
-    margin-block-end: 130px;
-    grid-row: 4;
-    grid-column: 1 / 2;
-    align-self: self-start;
+    margin-block-end: 15px;
+    grid-row: 3;
+    grid-column: 1 / span 2;
   }
 
-  .title-decor {
-    display: grid;
-    grid-row: 5;
+  .text_header-decor {
+    margin-top: 0;
+    grid-row: 4;
     grid-column: 2 / span 3;
     margin-right: 10px;
     margin-left: 30px;
+    height: max-content;
   }
 
   .why_focus_hard {
@@ -431,7 +425,7 @@
     margin: 0 10px;
   }
 
-  .card {
+  .card-list-image {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 190px auto 309px;
@@ -524,7 +518,7 @@
     align-items: start;
   }
 
-  .title-decor {
+  .text_header-decor {
     display: grid;
     grid-column: 2 / span 3;
     grid-row: 5;
@@ -588,13 +582,6 @@
     grid-row: 1;
   }
 
-  /* .multitasking,
-  .dopamine {
-    grid-column: 2;
-  }
-  .multitasking {
-    grid-row: 1;
-  } */
   .dopamine {
     grid-row: 2;
   }
@@ -607,7 +594,7 @@
     margin-block-end: 60px;
   }
 
-  .card {
+  .card-list-image {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
