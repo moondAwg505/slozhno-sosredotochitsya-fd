@@ -528,8 +528,6 @@
     margin: 40px 10px 40px;
   }
 
-  
-
   .why_focus_hard {
     display: grid;
     grid-template-columns: 315px auto;
@@ -561,7 +559,6 @@
     margin-top: 0;
     grid-column: 1;
     grid-row: 2;
-    
   }
 
   .food {
