@@ -148,7 +148,6 @@
 }
 
 .article-text {
-  margin-block-end: 20px;
   font-family: var(--font-family), sans-serif;
   font-weight: 400;
   font-size: var(--font-size, 1.125rem);
@@ -174,18 +173,12 @@
   color: var(--declarative-elements-color);
 }
 
+.card {
+  margin-block-start: 20px;
+}
+
 .content-section {
   margin-block-end: 50px;
-}
-
-.card {
-  margin-bottom: 2rem;
-}
-
-.why_focus_hard {
-  margin-block-end: 30px;
-  display: flex;
-  flex-direction: column;
 }
 
 .word_multitasking_text_custom {
@@ -335,21 +328,23 @@
   .multitasking,
   .dopamine {
     margin-top: 0;
-    margin-inline-start: 20px;
+    margin-inline-start: 27px;
+    margin-inline-end: 10px;
   }
   .multitasking {
     grid-row: 1 / 2;
     margin-block-end: 0;
   }
   .dopamine {
+    margin-block-start: 20px;
     grid-row: 2;
     grid-column: 2;
   }
 
   .decreased_concentration {
     margin: 0 10px;
-    margin-block-start: 60px;
-    margin-block-end: 60px;
+    margin-block-start: 80px;
+    margin-block-end: 80px;
     display: grid;
     grid-template-columns: 150px 1fr;
     grid-template-rows: repeat(4, auto);
@@ -380,7 +375,7 @@
     margin: 10px;
     grid-template-columns: 254px auto;
     align-items: start;
-    margin-block-end: 56px;
+    margin-block-end: 75px;
   }
 
   .better_concentration_title {
@@ -402,6 +397,7 @@
     grid-column: 2;
   }
   .sky_and_clouds {
+    margin-block-start: 0;
     grid-row: 1 / 2;
   }
   .music {
@@ -428,7 +424,7 @@
   .card-list-image {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 190px auto 309px;
+    grid-template-rows: repeat(3, auto);
     gap: 20px;
   }
 
@@ -496,6 +492,7 @@
     margin-left: 0;
     position: absolute;
     top: 270px;
+    grid-column: 1;
     grid-row: 3;
     font-size: 157px;
   }
@@ -506,7 +503,6 @@
     margin-top: 0;
     grid-row: 1;
     grid-column: 1 / span 2;
-    align-self: st;
     justify-self: center;
   }
 
@@ -519,12 +515,11 @@
   }
 
   .text_header-decor {
-    display: grid;
     grid-column: 2 / span 3;
     grid-row: 5;
-    margin-top: 0;
+    margin-top: 10px;
     margin-left: 0;
-    margin-right: 0;
+    margin-right: -10px;
     justify-self: center;
     align-self: self-start;
   }
@@ -533,10 +528,12 @@
     margin: 40px 10px 40px;
   }
 
+  
+
   .why_focus_hard {
     display: grid;
     grid-template-columns: 315px auto;
-    margin-block-end: 60px;
+    margin-block-end: 80px;
   }
 
   .multitasking,
@@ -553,7 +550,6 @@
     grid-template-columns: repeat(3, auto);
     grid-template-rows: 47px max-content;
     gap: 20px;
-    margin: 0;
   }
 
   .decreased_concentration_title {
@@ -565,14 +561,17 @@
     margin-top: 0;
     grid-column: 1;
     grid-row: 2;
+    
   }
 
   .food {
     grid-column: 2;
     grid-row: 2;
+    margin-block-start: 0;
   }
 
   .gadgets {
+    margin-block-start: 0;
     grid-column: 3;
     grid-row: 2;
   }
@@ -591,7 +590,7 @@
     grid-template-columns: 335px auto;
     align-items: start;
     margin-block-start: 35px;
-    margin-block-end: 60px;
+    margin-block-end: 80px;
   }
 
   .card-list-image {
