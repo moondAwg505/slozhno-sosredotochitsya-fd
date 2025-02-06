@@ -110,7 +110,7 @@
   margin-top: 66.5px;
   font-family: var(--font-family), sans-serif;
   font-weight: 700;
-  font-size: clamp(7.25rem, 5.769rem + 6.32vw, 9.813rem);
+  font-size: clamp(7.25rem, 6.628rem + 2.65vw, 9.813rem);
   line-height: 95.7px;
   color: var(--title-header-color);
   text-shadow: 4px 4px 0px var(--title-bg-color);
@@ -241,7 +241,7 @@
 .text_footer {
   font-family: var(--font-family), sans-serif;
   font-weight: 700;
-  font-size: clamp(7.25rem, 5.769rem + 6.32vw, 9.813rem);
+  font-size: clamp(7.25rem, 6.628rem + 2.65vw, 9.813rem);
   line-height: 95.7px;
   color: var(--title-header-color);
   text-shadow: 2px 2px 0px var(--title-bg-color);
