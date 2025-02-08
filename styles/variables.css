@@ -2,7 +2,7 @@
   --font-family: 'IBM Plex mono';
   --font-size: 1.125rem;
   --declarative-elements-color: #FF0070;
-  --declarative-elements-color-rgb: rgba(255, 0, 112);
+  --declarative-elements-color-rgb: 255, 0, 112;
   --title-bg-color: #ff0070;
   --title-header-color: #DB00FF;
   --title-color: #000028;
@@ -10,5 +10,4 @@
   --text-line-height: 23.4px;
   --bg-color-site: #000028;
   --bg-image: url(../images/cover-image-dark.png);
-  --declarative-elements-color-rgb: 255 0 112;
 }

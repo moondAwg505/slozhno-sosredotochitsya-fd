@@ -71,6 +71,10 @@
   justify-content: end;
 }
 
+.theme-light .header__theme-menu {
+  margin-top: 70px;
+}
+
 .header__theme-menu-item {
   margin-bottom: 13px;
 }
@@ -90,7 +94,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid rgba(var(--declarative-elements-color-rgb) / 0.4);
+  outline: 1px solid rgba(var(--declarative-elements-color-rgb),  0.4);
 }
 
 .header__theme-menu-button:focus {
@@ -116,6 +120,10 @@
   text-shadow: 4px 4px 0px var(--title-bg-color);
 }
 
+.theme-light .title_header {
+  margin-top: 60px;
+}
+
 .text_header {
   font-family: var(--font-family), sans-serif;
   font-weight: 700;
@@ -129,6 +137,10 @@
   background-color: var(--title-bg-color);
   min-width: min-content;
   margin-bottom: 52px;
+}
+
+.theme-light .text_header-decor {
+  margin-top: 50px;
 }
 
 .main {
@@ -169,10 +181,10 @@
   margin-block-end: 20px;
 }
 
-.card:not(:last-child) {
+/* .card:not(:last-child) {
   margin-block-start: 20px;
   margin-block-end: 20px;
-}
+} */
 
 .content-section {
   margin-block-end: 50px;
@@ -277,13 +289,22 @@
     margin-block-start: 35px;
   }
 
+  .theme-light .header__theme-menu {
+    margin-top: 60px;
+  }
+
   .title_header {
+    display: grid;
     margin-inline-end: -10px;
     margin-block-start: 40px;
     line-height: 99px;
     margin-block-end: 15px;
     grid-row: 3;
     grid-column: 1 / span 2;
+  }
+
+  .theme-light .title_header {
+    margin-top: 50px;
   }
 
   .text_header-decor {
@@ -293,6 +314,10 @@
     margin-right: 10px;
     margin-left: 40px;
     height: max-content;
+  }
+
+  .theme-light .text_header-decor {
+    margin-top: 30px;
   }
 
   .main {
@@ -324,24 +349,26 @@
     margin-block-end: 0;
   }
 
-  .card:not(:last-child) {
-    margin-block-start: 0;
-    margin-block-end: 0px;
-  }
-
   .decreased_concentration {
     margin: 0 10px;
     margin-block-start: 80px;
     margin-block-end: 80px;
     display: grid;
     grid-template-columns: 150px 1fr;
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
   }
 
   .decreased_concentration_title {
     margin-left: 0;
     grid-column: 1;
     grid-row: 1;
+  }
+
+   .card-container-decreased_concentration {
+    display: grid;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    gap: 20px;
   }
 
   .multitasking-second {
@@ -426,30 +453,24 @@
     right: 10px;
   }
 
-  .decorated-zone::before {
-    left: 20px;
-    bottom: 20px;
-  }
-
-  .decorated-zone::after {
-    top: 20px;
-    right: 20px;
-  }
-
-  .title_header {
-    margin-top: -40px;
-    margin-left: -30px;
-    grid-column: 1 / span 2;
-    grid-row: 3;
-  }
-
   .header__theme-menu {
+    position: relative;
+    grid-column: 1 / span 2;
+    margin-left: 10px;
+    margin-top: 0;
+    grid-row: 1;
+    justify-self: center;
+    transform: translateY(-7px);
+  }
+
+  .theme-light .header__theme-menu {
     position: relative;
     margin-left: 10px;
     margin-top: 0;
     grid-row: 1;
     grid-column: 1 / span 2;
     justify-self: center;
+    transform: translateY(-7px);
   }
 
   .header__theme-menu-list {
@@ -460,6 +481,16 @@
     align-items: start;
   }
 
+  .title_header {
+    margin-top: -40px;
+    margin-left: -30px;
+    grid-row: 3;
+  }
+
+  .theme-light .title_header {
+    margin-top: -40px;
+  }
+
   .text_header-decor {
     grid-column: 2 / span 3;
     grid-row: 5;
@@ -468,6 +499,10 @@
     margin-right: -10px;
     justify-self: center;
     align-self: self-start;
+  }
+
+  .theme-light .text_header-decor {
+    margin-top: 10px;
   }
 
   .main {
@@ -485,11 +520,14 @@
     margin-inline-end: 10px;
   }
 
+  h3[data-special="h3_title"] {
+    margin-bottom: 20px;
+  }
   .decreased_concentration {
     margin-block-start: 0;
-    margin-block-end: 55px;
+    margin-block-end: 80px;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: 1fr;
     grid-template-rows: 47px max-content;
   }
 
@@ -498,24 +536,12 @@
     grid-row: 1;
   }
 
-  .multitasking-second {
-    margin-top: 0;
-    grid-column: 1;
-    grid-row: 2;
+  .card-container-decreased_concentration {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column: 1 / 2;
+    gap: 20px;
   }
-
-  .food {
-    grid-column: 2;
-    grid-row: 2;
-    margin-block-start: 0;
-  }
-
-  .gadgets {
-    margin-block-start: 0;
-    grid-column: 3;
-    grid-row: 2;
-  }
-
   .images_title {
     margin-block-end: 20px;
   }
@@ -524,6 +550,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
+    margin-block-start: 20px;
     gap: 20px;
   }
 

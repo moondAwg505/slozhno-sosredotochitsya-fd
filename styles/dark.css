@@ -1,6 +1,6 @@
 :root.theme-dark {
   --declarative-elements-color: #ff0070;
-  --declarative-elements-color-rgb: 255 0 112;
+  --declarative-elements-color-rgb: 255, 0, 112;
   --title-bg-color: #ff0070;
   --title-header-color: #db00ff;
   --title-color: #000028;
@@ -10,7 +10,6 @@
 }
 
 .theme-dark .page {
-  
   background-image: var(--bg-image);
 }
 
