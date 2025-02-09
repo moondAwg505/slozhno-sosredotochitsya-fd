@@ -156,8 +156,13 @@
   color: var(--title-color, #000028);
 }
 
+
+h4.article-title {
+  font-weight: normal;
+}
+
 .card-container-title {
-  margin-block-start: 20px;
+  margin-block-start: 18px;
   font-family: var(--font-family), sans-serif;
   font-weight: 700;
   font-size: var(--font-size, 18px);
