@@ -30,10 +30,6 @@
     --bg-image: url(../images/cover-image-light.png);
   }
 
-  .header__theme-menu {
-    margin-top: var( --header-menu-margin-top-light-theme-auto);
-  }
-
   .rec {
     display: none;
   }

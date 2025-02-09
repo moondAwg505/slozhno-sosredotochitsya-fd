@@ -156,7 +156,6 @@
   color: var(--title-color, #000028);
 }
 
-
 h4.article-title {
   font-weight: normal;
 }
@@ -536,7 +535,7 @@ h4.article-title {
   }
 
   .decreased_concentration_title {
-    /* Grid для переноса в заголовке */
+    /* Колонка для переноса в заголовке */
     display: grid;
     grid-template-columns: 300px;
     grid-column: 1;
