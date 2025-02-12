@@ -13,11 +13,6 @@
   display: none;
 }
 
-.theme-light .page {
-  background-image: var(--bg-image);
-  background-color: var(--bg-color-site);
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     --declarative-elements-color: #353430;
@@ -29,11 +24,6 @@
     --bg-color-site: #fff1f7;
     --bg-image: url(../images/cover-image-light.png);
   }
-
-  .header__theme-menu {
-    margin-top: var( --header-menu-margin-top-light-theme-auto);
-  }
-
   .rec {
     display: none;
   }
