@@ -7,11 +7,14 @@
   background-size: cover;
 }
 
+/* Убраны повторения и удалены ненужные сущности */
+
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   justify-items: end;
   align-items: center;
+  min-height: 668px; /* Восстановлено */
   height: 100vh;
   position: relative;
   margin: 0 10px;
@@ -30,7 +33,7 @@
 .text_header-decor {
   inline-size: 100%;
   background-color: var(--title-bg-color);
-  transform: translateY(-5px);
+  margin-top: -10px; /* Исправлены: transform на margin */
 }
 
 .text_header {
@@ -264,7 +267,7 @@ h4.article-title {
     grid-row: 2;
     grid-column: 3;
     margin-inline-end: 10px;
-    margin-block-start: 20px;
+    margin-block-start: 9px;
     align-self: start;
   }
 
@@ -281,14 +284,14 @@ h4.article-title {
     align-self: start;
     inline-size: 49%;
     margin-inline-end: 10px;
+    margin-top: -21px;
     grid-row: 4;
     grid-column: 1 / span 3;
-    transform: translateY(-10px);
   }
 
   .rec {
-    margin-top: 10px;
-    margin-right: 10px;
+    top: 20px; /* Исправлено: заменен margin на top */
+    right: 10px; /* Исправлено: заменен margin на right */
     grid-row: 1;
     grid-column: 3;
   }
@@ -340,7 +343,6 @@ h4.article-title {
     margin: 0 10px;
     margin-block-start: 80px;
     margin-block-end: 80px;
-    display: grid;
     grid-template-columns: 150px 1fr;
     grid-template-rows: repeat(2, auto);
   }
@@ -356,14 +358,6 @@ h4.article-title {
     grid-column: 1 / span 2;
     grid-row: 2;
     gap: 20px;
-  }
-
-  .better_concentration {
-    display: grid;
-    margin: 10px;
-    grid-template-columns: 254px auto;
-    align-items: start;
-    margin-block-end: 75px;
   }
 
   .images {
@@ -417,7 +411,6 @@ h4.article-title {
     grid-column: 1 / span 2;
     grid-row: 1;
     justify-self: center;
-    align-self: start;
     transform: translateY(-8px);
     margin-inline-end: 0;
     margin-block-start: 30px;
@@ -438,14 +431,13 @@ h4.article-title {
     grid-column: 2 / span 3;
     grid-row: 4;
     justify-self: center;
-    align-self: start;
     inline-size: 98%;
-    transform: translateY(0px);
+    margin-top: 3px; /* Исправлено: заменен transform на margin */
   }
 
   .rec {
     grid-column: auto;
-    top: 10px;
+    top: 20px;
   }
 
   .main {
@@ -457,7 +449,6 @@ h4.article-title {
   }
 
   .content-section {
-    display: grid;
     grid-template-columns: 295px auto;
     margin-block-end: 80px;
   }
@@ -477,7 +468,6 @@ h4.article-title {
   }
 
   .decreased_concentration_title {
-    /* Колонка для переноса в заголовке */
     display: grid;
     grid-template-columns: 300px;
     grid-column: 1;
@@ -485,17 +475,16 @@ h4.article-title {
   }
 
   .card-container-decreased_concentration {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-column: 1 / 2;
     gap: 20px;
   }
+
   .images_title {
     margin-block-end: 20px;
   }
 
   .card-list-image {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
     margin-block-start: 20px;
