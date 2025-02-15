@@ -414,17 +414,13 @@ h4.article-title {
     transform: translateY(-8px);
     margin-inline-end: 0;
     margin-block-start: 30px;
+    margin-block-end: 16px;
   }
 
   .header__theme-menu-list {
-    display: flex;
     flex-direction: row;
     gap: 10px;
     align-items: start;
-  }
-
-  .title_header {
-    transform: translateY(10px);
   }
 
   .text_header-decor {
@@ -432,7 +428,7 @@ h4.article-title {
     grid-row: 4;
     justify-self: center;
     inline-size: 98%;
-    margin-top: 3px; /* Исправлено: заменен transform на margin */
+    margin-top: 0px; /* Исправлено: заменен transform на margin */
   }
 
   .rec {
@@ -444,10 +440,6 @@ h4.article-title {
     margin: 60px 10px 40px;
   }
 
-  .section-title {
-    margin-inline-end: -20px;
-  }
-
   .content-section {
     grid-template-columns: 295px auto;
     margin-block-end: 80px;
@@ -457,6 +449,12 @@ h4.article-title {
     grid-column: 2;
     margin-inline-start: 30px;
     margin-inline-end: 10px;
+  }
+
+  .how_concentrate_better_title {
+    /*  Убран отрицательный оступ */
+    display: grid;
+    grid-template-columns: 310px;
   }
 
   .decreased_concentration {
@@ -488,7 +486,6 @@ h4.article-title {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
     margin-block-start: 20px;
-    gap: 20px;
   }
 
   .sunset {
@@ -514,9 +511,5 @@ h4.article-title {
   .street {
     grid-column: 2 / 4;
     grid-row: 3 / 4;
-  }
-
-  .footer {
-    text-align: center;
   }
 }
