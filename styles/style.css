@@ -452,7 +452,7 @@ h4.article-title {
   }
 
   .how_concentrate_better_title {
-    /*  Убран отрицательный оступ */
+    /*  Убран отрицательный оступ создана калонка для заголовка */
     display: grid;
     grid-template-columns: 310px;
   }
